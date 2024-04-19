@@ -5,7 +5,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 
 data = pd.read_csv(
-    '/home/pegah/Desktop/No-show-Final/Source/no-show/Data/apptdata-no-show part-original.csv')
+    'no-show/Data/apptdata-no-show part-original.csv')
 
 data.info()
 
@@ -187,7 +187,7 @@ print("Columns are:", data.columns)
 
 # Save the preprocessed DataFrame to a CSV file
 df_copy.to_csv(
-    '/home/pegah/Desktop/No-show-Final/Source/no-show/DataPreprocessing/no-show-cleaned-data.csv', index=False)
+    'no-show/DataPreprocessing/no-show-cleaned-data.csv', index=False)
 
 df_copy.describe()
 

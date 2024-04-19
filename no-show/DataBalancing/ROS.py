@@ -4,7 +4,7 @@ from imblearn.over_sampling import RandomOverSampler
 
 # Read the CSV file into a DataFrame
 data = pd.read_csv(
-    '/home/pegah/Desktop/No-show-Final/Source/no-show/VariableSelection/no-show-selected-features.csv')
+    'no-show/VariableSelection/no-show-selected-features.csv')
 
 # Assuming your target variable is in a column named 'target'
 X = data.drop(columns=["Binary_Outcome"])
@@ -25,7 +25,7 @@ df_resampled['Binary_Outcome'] = y_resampled
 
 # Save resampled data to CSV file
 df_resampled.to_csv(
-    '/home/pegah/Desktop/No-show-Final/Source/no-show/DataBalancing/ROS_resampled_data.csv', index=False)
+    'no-show/DataBalancing/ROS_resampled_data.csv', index=False)
 
 # Print the class distribution after ROS
 print("Class distribution after Random Under Sampling:")

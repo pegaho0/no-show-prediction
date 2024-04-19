@@ -17,7 +17,7 @@ import seaborn as sns
 from sklearn.metrics import accuracy_score
 
 df = pd.read_csv(
-    '/home/pegah/Desktop/No-show-Final/Source/no-show/DataPreprocessing/no-show-cleaned-data.csv')
+    'no-show/DataPreprocessing/no-show-cleaned-data.csv')
 
 df.info()
 
@@ -154,7 +154,7 @@ df_copy.drop(columns=columns_to_drop, inplace=True)
 
 # Save the preprocessed DataFrame to a CSV file
 df_copy.to_csv(
-    '/home/pegah/Desktop/No-show-Final/Source/no-show/VariableSelection/no-show-selected-features.csv', index=False)
+    'no-show/VariableSelection/no-show-selected-features.csv', index=False)
 
 df_copy.describe()
 
